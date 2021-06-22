@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Character counter</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    
+
+<div class="textarea">
+
+        <h1>Javascript Textarea Character Counter!</h1>
+
+    <textarea name="txtarea" id="txtarea" cols="50" onkeyup="charCounter()" rows="10" maxlength="11" placeholder="Type Here.."></textarea>
+    <p>Character: <span id="count"></span> </p>
+</div>
+
+<script>
+
+const charCounter = () => {
+    let txtarea = document.getElementById('txtarea');
+    let count   = document.getElementById('count');
+    
+   if (txtarea.value.length > 10){
+       alert("Maximum 10 characters are allowed!");
+   }
+
+   count.innerHTML = txtarea.value.length;
+
+}
+
+</script>
+
+</body>
+</html>

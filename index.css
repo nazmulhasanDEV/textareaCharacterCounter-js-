@@ -1,0 +1,22 @@
+body {
+    background-color: brown;
+    margin: 0;
+}
+
+.textarea {
+    position: relative;
+    left: 32%;
+    top: 100px;
+}
+
+.textarea #txtarea {
+    border: none;
+    outline: none;
+    font-family: 'Times New Roman', Times, serif;
+    text-indent: 5px;
+    font-size: 20px;
+}
+
+.textarea p, h1 {
+    color: white;
+}
